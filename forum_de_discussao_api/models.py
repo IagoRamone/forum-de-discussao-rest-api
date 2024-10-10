@@ -21,3 +21,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         """Pega o menor nome """
         return self.name
+
+def __str__(self):
+    """Retorna o email do usuario"""
+    return self.email
